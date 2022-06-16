@@ -1,0 +1,6 @@
+.searchArea {
+    display: flex;
+    /* width: 50vh; */
+    justify-content: space-evenly;
+    align-items: center;
+}

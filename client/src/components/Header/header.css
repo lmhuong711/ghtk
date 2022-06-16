@@ -1,0 +1,16 @@
+.header {
+    padding: 2rem 0 1rem 0;
+    color: #6464af;
+    width: 100%;
+}
+
+.buttgroup {
+    margin-bottom: 1rem;
+}
+
+.logo {
+    height: 16vh;
+    min-height: 14vh;
+    max-height: 16vh;
+    object-fit: contain;
+}

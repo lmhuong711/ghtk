@@ -1,0 +1,20 @@
+
+// app.get('/init', (req, res) => {
+//   const sqlQuery = "CREATE TABLE `classicmodels`.`student` (" +
+//     "`idstudent` INT NOT NULL," +
+//     "`Trường Tiểu học` VARCHAR(45) NULL," +
+//     "`Quận/Huyện` VARCHAR(45) NULL," +
+//     "`Mã học sinh` VARCHAR(45) NOT NULL," +
+//     "`Lớp` VARCHAR(45) NULL," +
+//     "`Họ và tên` VARCHAR(45) NOT NULL," +
+//     "`Ngày sinh` VARCHAR(45) NULL," +
+//     "`Giới tính` VARCHAR(45) NULL," +
+//     "`Nơi sinh` VARCHAR(45) NULL," +
+//     "`Dân tộc` VARCHAR(45) NULL," +
+//     "`Hộ khẩu thường trú` VARCHAR(45) NULL," +
+//     "`Điện thoại liên hệ` VARCHAR(45) NULL," +
+//     "`Điểm sơ tuyển vòng 1` NOT VARCHAR(45) NULL," +
+//     "`Ghi chú` VARCHAR(45) NULL," +
+//     "PRIMARY KEY (`idstudent`)," +
+//     "UNIQUE INDEX `idstudent_UNIQUE` (`idstudent` ASC) VISIBLE," +
+//     "UNIQUE INDEX `Mã học sinh_UNIQUE` (`Mã học sinh` ASC) VISIBLE)";
