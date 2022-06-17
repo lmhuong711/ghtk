@@ -43,7 +43,6 @@ app.post('/student', (req, res) => {
   con.query(sql, [values], function (err, result) {
     if (err) message = err.toString();
     else message = "Thành công! Đã thêm " + result.affectedRows + " dòng.";
-    console.log(message);
     res.json(message);
   });
 })
@@ -54,7 +53,6 @@ app.get('/student', (req, res) => {
     sc: values.studentCode !== '',
     fn: values.fullname !== '',
   };
-  console.log(values);
   var message = 'Hông rõ lỗi';
   if (!haveData.sc && !haveData.fn) {
     message = 'Không có dữ liệu';
@@ -63,7 +61,7 @@ app.get('/student', (req, res) => {
       data: [],
     });;
   } else {
-    var sql = "SELECT school, district, studentCode, class, fullName, dob, gender, birthplace, ethnic, address, phone, marks, note FROM student WHERE ";
+    var sql = "SELECT school, district, studentCode, class, fullName, dob, gender, phone, marks, note FROM student WHERE ";
     haveData.sc ? (sql = sql + "studentCode like '%" + values.studentCode + "%' ") : null;
     haveData.sc && haveData.fn ? sql = sql + ' and ' : null;
     haveData.fn ? (sql = sql + "fullname like '%" + values.fullname + "%' ") : null;

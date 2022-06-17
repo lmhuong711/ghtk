@@ -1,0 +1,20 @@
+.tablehead {
+    background-color: #6464af80;
+}
+
+.headercell {
+    padding: 0px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.nopadding {
+    padding: 0px;
+}
+
+.pdct {
+    display: flex;
+    padding: 2px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
