@@ -41,6 +41,4 @@ data.forEach(el => {
 });
 
 var pdata = document.getElementById("pdata");
-pdata.innerHTML = JSON.stringify(root);
-
-console.log(JSON.stringify(root));
+pdata.innerHTML = JSON.stringify(root, null, 4);
