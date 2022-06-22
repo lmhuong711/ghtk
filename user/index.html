@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <title>User</title>
+</head>
+
+<body>
+  <form class="container needs-validation">
+    <div class="form--header w-100 bg-success p-4 mt-4 border rounded-top border-bottom-0">
+      <span class="font-weight-bold text-white">ĐĂNG KÝ TÀI KHOẢN USER</span>
+    </div>
+    <div class="p-4 border rounded-bottom border-top-0" id="form">
+      <div class="form-group">
+        <label for="usernameInput">Username</label>
+        <input type="text" class="form-control" id="usernameInput" name="usernameInput"
+          placeholder="Enter your username" required />
+        <div class="invalid-feedback">
+          Please choose a username.
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="fullnameInput">Full name</label>
+        <input type="text" class="form-control" id="fullnameInput" name="fullnameInput"
+          placeholder="Enter your full name" required />
+      </div>
+      <div class="form-group">
+        <label for="emailInput">Email address</label>
+        <input type="email" class="form-control" id="emailInput" name="emailInput" placeholder="VD:abc@gmail.com"
+          required />
+      </div>
+      <div class="form-group">
+        <label for="birthdayInput">Birthday</label>
+        <input type="date" class="form-control" id="birthdayInput" name="birthday" required />
+      </div>
+      <div class="btn-area d-flex">
+        <button type="submit" class="btn btn-success m-1 btn--save" id="save">Save</button>
+        <button type="reset" class="btn btn-warning m-1 btn--reset" id="reset"> Reset </button>
+      </div>
+    </div>
+  </form>
+
+  <div class="table-responsive">
+    <table class="table table-striped table-bordered table-hover">
+      <thead class="bg-success text-white">
+        <tr>
+          <th scope="col">No</th>
+          <th scope="col">Username</th>
+          <th scope="col">Full Name</th>
+          <th scope="col">Email</th>
+          <th scope="col">Birthday</th>
+          <th scope="col"></th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody id="table-body" class=""></tbody>
+    </table>
+  </div>
+  <script src="./script.js"></script>
+</body>
+
+</html>

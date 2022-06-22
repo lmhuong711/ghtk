@@ -1,0 +1,32 @@
+{
+    "user": [
+        {
+            "id": 1,
+            "username": "huonglm1",
+            "fullname": "Le Minh Huong",
+            "email": "huonglm1@gmail.com",
+            "birthday": "2001-02-23"
+        },
+        {
+            "id": 2,
+            "username": "huonglm2",
+            "fullname": "Le Minh Huong2",
+            "email": "huonglm2@gmail.com",
+            "birthday": "2001-02-24"
+        },
+        {
+            "id": 3,
+            "username": "huonglm3",
+            "fullname": "Le Minh Huong3",
+            "email": "huonglm3@gmail.com",
+            "birthday": "2001-02-25"
+        },
+        {
+            "id": 4,
+            "username": "huonglm4",
+            "fullname": "Le Minh Huong4",
+            "email": "huonglm4@gmail.com",
+            "birthday": "2001-02-26"
+        }
+    ]
+}
