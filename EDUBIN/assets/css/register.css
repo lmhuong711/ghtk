@@ -26,7 +26,7 @@
     margin-left: auto;
 }
 
-.register-header-text>h2 {
+.register-header-text h2 {
     color: #fff;
     font-size: 4.6rem;
     font-weight: 700;
@@ -36,7 +36,7 @@
     line-height: 5.4rem;
 }
 
-.register-header-nav>ul {
+.register-header-nav ul {
     position: relative;
     display: flex;
 }
@@ -45,7 +45,7 @@
     margin-top: 4rem;
 }
 
-.register-header-nav>ul>li>a {
+.register-header-nav a {
     color: #fff;
     font-size: 1.6rem;
 }
@@ -57,7 +57,7 @@
     font-size: 1.6rem;
 }
 
-.register-header-nav>ul>li>span {
+.register-header-nav span {
     color: #fff;
     font-size: 1.6rem;
     font-weight: 300;
@@ -90,14 +90,14 @@
     margin: 0 2rem 2.5rem 2rem;
 }
 
-.register-group>label {
+.register-group label {
     display: block;
     font-size: 1.6rem;
     font-weight: 500;
     margin-bottom: 1.5rem;
 }
 
-.register-group>input {
+.register-group input {
     width: 100%;
     height: 4.2rem;
     border: .1rem solid #bbb;
@@ -107,8 +107,6 @@
     font-size: 1.4rem;
     font-weight: 500;
 }
-
-.register-form-group-btn {}
 
 .register-btn {
     position: absolute;

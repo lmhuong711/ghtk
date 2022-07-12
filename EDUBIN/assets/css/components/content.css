@@ -1,0 +1,260 @@
+.content-container {
+    position: relative;
+}
+
+.content-platform {
+    position: absolute;
+    left: 50%;
+    top: -15%;
+    transform: translateX(-50%);
+}
+
+.content-platform-container {
+    background-color: #07294d;
+    padding: 8rem 9rem 8rem 7rem;
+    border-radius: 1rem;
+    max-width: 114rem;
+
+}
+
+.content-platform-category {
+    border-radius: .5rem;
+    text-align: center;
+    margin: 0 1.5rem;
+    width: 17rem !important;
+    height: 17rem !important;
+    display: inline-block;
+}
+
+.content-platform-category a {
+    display: block;
+    padding-top: 1.5rem;
+    font-size: 1.8rem;
+    color: #fff;
+}
+
+.content-platform-category p {
+    font-weight: 700;
+    margin: 0;
+}
+
+.content-platform-category img {
+    width: 8rem;
+    margin: auto;
+    height: auto;
+    max-width: 100%;
+    border: none;
+}
+
+.content-platform-slides {
+    width: 62%;
+}
+
+.content-platform-txt {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    padding: 0 8rem 0 0;
+    width: 38%;
+}
+
+.content-platform-txt p {
+    display: block;
+    margin: 0;
+    color: #fff;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 3.6rem;
+    font-weight: 700;
+    line-height: 4.3rem;
+}
+
+.content-platform-slide,
+.content-platform-content {
+    display: flex;
+    width: 100%;
+}
+
+.content-left-bar span {
+    display: inline-block;
+    height: .3rem;
+    margin-top: .8rem;
+    margin-bottom: 1.3rem;
+    position: relative;
+    width: 4.2rem;
+    background: var(--main-color-second);
+}
+
+.content-left-title p,
+.content-left-title-txth h2 {
+    font-family: "Montserrat", Sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    display: block;
+    margin: .5rem 0;
+    padding: 0;
+    line-height: 3rem;
+}
+
+.content-left-title-txth h2 {
+    margin: 0px;
+    font-size: 4.8rem;
+    line-height: 5.8rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    color: #23252a;
+}
+
+.content-left-text {
+    margin-bottom: 4rem;
+}
+
+.content-text p {
+    margin-bottom: 2.6rem;
+    font-size: 1.6rem;
+    color: rgb(120, 122, 122);
+    line-height: 2.6rem;
+    font-weight: 400;
+}
+
+.content-left-btn-element a {
+    display: inline-block;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.7rem;
+    fill: #07294d;
+    color: #07294d;
+    background-color: #ffca2e;
+    padding: 1.7rem 3rem;
+    border-radius: .3rem;
+}
+
+.content-right-all {
+    padding: 5.5rem;
+    background-color: rgba(255, 255, 255, .95);
+}
+
+.content-right-title p {
+    font-family: "Montserrat", Sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #23252a;
+    padding-bottom: 3.2rem;
+    padding-top: 0;
+    margin: 0;
+}
+
+.content-right-events ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.content-right-event {
+    padding: 3rem 0;
+    border-bottom: .1rem solid #cecece;
+}
+
+.apply-contents {
+    padding-bottom: 12rem;
+}
+
+.content-right-event>a {
+    display: block;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 2.4rem;
+    font-weight: 600;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+    margin-bottom: 0;
+    color: #23252a;
+    line-height: 2.88rem;
+    transition: .3s;
+}
+
+.content-right-event>a:hover {
+    color: var(--main-color-second);
+}
+
+.content-right-event>span {
+    font-size: 1.5rem;
+    color: #8a8a8a;
+    margin-right: 2rem;
+}
+
+.content-right-event>span>i {
+    font-size: 1.5rem;
+    color: var(--main-color-second);
+    margin-right: 1rem;
+}
+
+.content-left-btn-element>a:hover {
+    background-color: var(--main-color-first);
+    color: #fff;
+}
+
+.content-left-btn-element>a {
+    background-color: var(--main-color-second);
+    transition: .3s;
+}
+
+
+.apply-shared-css>.apply-title>p {
+    margin: 0 0 3.7rem 0;
+    color: #fff;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 4.3rem;
+}
+
+.apply-shared-css>.apply-content {
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 2.6rem;
+    margin-bottom: 6rem;
+}
+
+.apply-shared-css>.apply-btn>a {
+    font-family: "Montserrat", Sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: .05rem;
+    fill: #07294d;
+    color: #07294d;
+    background-color: #ffc600;
+    border-style: solid;
+    border-width: .2rem;
+    border-color: #ffc600;
+    padding: 1.6rem 3.2rem;
+    border-radius: .4rem;
+    transition: .3s;
+}
+
+.apply-shared-css>.apply-btn>a:hover {
+    color: #fff;
+    background-color: #07294d;
+    border-color: #fff;
+}
+
+.apply-content-all {
+    display: flex;
+    max-width: 114rem;
+
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.apply-content-left,
+.apply-content-right {
+    padding: 6rem 6rem 7rem 6rem;
+}
+
+.apply-content-left {
+    background-color: var(--main-color-first);
+}
+
+.apply-content-right {
+    background-color: #092e56;
+}

@@ -1,0 +1,972 @@
+/* review */
+.review-middle-img {
+    display: flex;
+    align-items: center;
+}
+
+.review-middle-img img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.review-middle-img-name a {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #4c5a81;
+}
+
+.review-middle-img-name .sub {
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: #b8bfce;
+}
+
+.review-bottom-admin {
+    font-size: 1.4rem;
+    color: var(--main-color-second);
+}
+
+.review-bottom-admin>span>span {
+    margin-left: .5rem;
+    font-size: 1.4rem;
+    letter-spacing: .01rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #8a8a8a;
+}
+
+/* cart icon */
+.cart-custom {
+    position: relative;
+}
+
+.cart-custom span {
+    font-size: 1.2rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    color: #07294d;
+    background-color: var(--main-color-second);
+    border-radius: 1rem;
+    padding: 0 0.4rem;
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    height: 1.8rem;
+    width: 1.8rem;
+    line-height: 2rem;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* featured */
+.featured-img {
+    position: relative;
+    background-color: #f9f9f9;
+    background-image: url("/EDUBIN/assets/img/course-shape.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+}
+
+.featured-contents {
+    position: relative;
+    max-width: 117rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.featured-contents-txt {
+    padding: 10rem 0 9rem 0;
+    /* position: absolute; */
+}
+
+.featured-content-sub-title>p {
+    font-family: "Montserrat", Sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    display: block;
+    margin: 0.5rem 0;
+    line-height: 3rem;
+}
+
+.featured-content-bar {
+    display: inline-block;
+    height: 0.3rem;
+    margin-top: 0.8rem;
+    margin-bottom: 1.3rem;
+    position: relative;
+    width: 4.2rem;
+    background: var(--main-color-second);
+}
+
+.featured-content-top {
+    margin-left: 1.5rem;
+}
+
+.featured-content-title>h2 {
+    font-family: "Montserrat", Sans-serif;
+    display: block;
+    font-size: 4.8rem;
+    font-weight: 700;
+    line-height: 5.8rem;
+    margin: 0;
+    margin-bottom: 2rem;
+    padding-bottom: 4rem;
+    color: #23252a;
+}
+
+.featured-contents-slides {
+    width: 100%;
+}
+
+.featured-contents-slides-container {
+    display: flex;
+}
+
+
+.featured-contents-slides-content {
+    margin: 0 1.5rem;
+}
+
+.featured-contents-slide {
+    position: relative;
+    margin-bottom: 3rem;
+    width: 36rem;
+    background-color: #fff;
+}
+
+.featured-course-price {
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    z-index: 90;
+}
+
+.featured-course-bookmark {
+    position: absolute;
+    right: 4rem;
+    top: 2%;
+    right: 2%;
+    z-index: 90;
+}
+
+.featured-course-bookmark>span {
+    font-size: 1.4rem;
+    font-weight: 600;
+    width: 2rem;
+    height: 2.5rem;
+    background-color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: .2rem;
+}
+
+.featured-course-price>span {
+    font-size: 1.4rem;
+    color: #fff;
+    font-weight: 600;
+    padding: 0 .8rem;
+    height: 3rem;
+    background-color: var(--main-color-first);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: .2rem;
+}
+
+
+.featured-contents-slide-img>img {
+    border-top-left-radius: 0.3rem;
+    border-top-right-radius: 0.3rem;
+    width: 100%;
+    height: auto;
+    transition: .8s;
+}
+
+.featured-contents-slide-img {
+    cursor: pointer;
+    overflow: hidden;
+    height: 24rem;
+}
+
+.featured-contents-slide-img:hover img {
+    transform: scale(1.1);
+}
+
+.featured-contents-slide-review {
+    padding: 2.8rem 3rem 1.5rem 3rem;
+}
+
+.slide-review-rate {
+    display: flex;
+}
+
+.slide-review-rate div {
+    display: flex;
+    margin-right: 0.5rem;
+}
+
+
+.slide-review-rate-star>i {
+    color: var(--main-color-second);
+}
+
+.slide-review-rate-review {
+    font-size: 1.4rem;
+    color: #939bb3;
+    font-weight: 500;
+    position: relative;
+    margin-left: 0.8rem;
+}
+
+.featured-contents-slide-review-top>h4>a {
+    line-height: 2.7rem;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 2.3rem;
+    color: #07294d;
+}
+
+.featured-contents-slide-review-top>h4 {
+    margin: 0;
+    padding-top: 1.7rem;
+    padding-bottom: 2rem;
+    margin-bottom: 0;
+    font-weight: 700;
+    font-size: 2.2rem;
+    line-height: 2.7rem;
+}
+
+.featured-contents-slide-review-middle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2.5rem;
+    padding-bottom: 2.2rem;
+
+}
+
+.featured-cost {
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.featured-contents-slide-review-bottom {
+    border-top: .1rem solid #e0e0e0;
+    padding-top: 1rem;
+}
+
+.featured-contents-slide-review-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.featured-buy>span {
+    color: #9b9b9b;
+    font-weight: 500;
+}
+
+.featured-buy>a>i {
+    color: var(--main-color-second);
+    margin-right: .5rem;
+}
+
+.featured-buy>a {
+    font-size: 1.6rem;
+    color: #9b9b9b;
+}
+
+.featured-buy {
+    display: flex;
+    align-items: center;
+}
+
+.featured-user-duration>span {
+    font-size: 1.6rem;
+    color: #acacac;
+    margin-right: .5rem;
+}
+
+.featured-user-duration>span>i {
+    margin-right: .3rem;
+}
+
+
+/* video */
+.video-img {
+    position: relative;
+    background-image: url('/EDUBIN/assets/img/edu-bg.jpeg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 72rem;
+}
+
+
+.video-content-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 50%;
+    transform: translateY(26%);
+}
+
+.video-icon-play {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-icon-play>.btn-animation>i {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: #fff;
+    width: 8.2rem;
+    height: 8.2rem;
+    border-radius: 50%;
+}
+
+.btn-animation {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 8rem;
+    height: 8rem;
+    background: radial-gradient(rgba(255, 188, 0, .94) 60%, #fac911 62%);
+    border-radius: 50%;
+    z-index: 99;
+    cursor: pointer;
+}
+
+.video-text {
+    width: 50%;
+    padding: 0 0 0 8rem;
+}
+
+.video-text-content P {
+    margin: 0 0 2rem 0;
+    font-size: 3.6rem;
+    color: #fff;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 3.6rem;
+    font-weight: 700;
+    line-height: 4.3rem;
+    padding: 0 0 3.5rem 2rem;
+}
+
+.video-text-profile {
+    display: flex;
+    margin-bottom: 5rem;
+}
+
+.video-text-profile>img {
+    margin-right: 3rem;
+    width: 7.6rem;
+}
+
+.video-text-profile-element>h3 {
+    margin: 0;
+    margin-bottom: 2rem;
+    color: #fff;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+.video-text-profile-element>p {
+    color: #fff;
+    font-size: 1.6rem;
+    width: 38.4rem;
+    font-weight: 300;
+}
+
+.iframe-video {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .8);
+    top: 0;
+    left: 0;
+    z-index: 9999999999999;
+    display: none;
+}
+
+.iframe-video-container {
+    position: relative;
+    max-width: 68rem;
+    display: block;
+    margin: 0 auto;
+    height: 100%;
+}
+
+
+.iframe-video>.iframe-video-container>iframe {
+    position: absolute;
+    max-width: 100% !important;
+    width: 100% !important;
+    display: block !important;
+    height: 48rem !important;
+    border: none !important;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    background: #fff;
+    padding: 1rem;
+}
+
+
+/* teacher div */
+.teacher-container {
+    padding: 10rem 0 9rem 0;
+}
+
+.teacher-content {
+    display: flex;
+    max-width: 114rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.teacher-content-left-bottom {
+    margin-top: 6.5rem;
+}
+
+.teacher-content-left-bottom>a {
+    font-family: "Montserrat", Sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.7rem;
+    fill: #07294d;
+    color: #07294d;
+    background-color: #ffc600;
+    padding: 1.7rem 3rem;
+    border-radius: .3rem;
+    transition: .3s;
+}
+
+.teacher-content-left-bottom>a:hover {
+    color: #fff;
+    background-color: var(--main-color-first);
+}
+
+.teacher-content-left {
+    width: 50%;
+    padding-right: 7.5rem;
+}
+
+.teacher-content-right {
+    width: 50%;
+}
+
+.teacher-content-left-top>p {
+    font-family: "Montserrat", Sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    display: block;
+    margin: 0.5rem 0;
+    line-height: 3rem;
+}
+
+.teacher-content-left-top>span {
+    display: inline-block;
+    height: 0.3rem;
+    margin-top: 0.8rem;
+    margin-bottom: 1.3rem;
+    position: relative;
+    width: 4.2rem;
+    background: var(--main-color-second);
+}
+
+.teacher-content-left-top>h2 {
+    font-family: "Montserrat", Sans-serif;
+    display: block;
+    font-size: 4.8rem;
+    font-weight: 700;
+    line-height: 5.8rem;
+    margin: 0;
+    padding-bottom: 1rem;
+    color: #23252a;
+}
+
+.teacher-content-left-middle>p {
+    margin-bottom: 2.6rem;
+    font-size: 1.6rem;
+    color: rgb(120, 122, 122);
+    line-height: 2.6rem;
+    font-weight: 400;
+}
+
+.teacher-content-right-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.teacher-content-right-content {
+    position: relative;
+    flex: 0 0 50%;
+    max-width: 50%;
+    transition: .5s;
+}
+
+.teacher-content-right-img {
+    overflow: hidden;
+    border-radius: .3rem;
+    min-height: .1rem;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.teacher-content-right-img>a>img {
+    width: 100%;
+    height: 30.5rem;
+    object-fit: cover;
+}
+
+.teacher-content-right-img-info {
+    position: absolute;
+    bottom: 4rem;
+    left: 0;
+    right: 0;
+    width: 70%;
+    background-color: #f9f9f9;
+    border-radius: .3rem;
+    margin: 0 auto;
+    padding: 0;
+    height: 7.5rem;
+    overflow: hidden;
+    transition: .3s;
+}
+
+.teacher-content-area>a {
+    color: var(--main-color-first);
+    font-size: 1.8rem;
+    font-weight: 700 !important;
+    margin: 0 0 .5rem 0;
+    padding: 0;
+    line-height: 2.2rem;
+    transition: .3s;
+}
+
+.teacher-content-area>a:hover {
+    color: var(--main-color-second);
+}
+
+.teacher-content-area {
+    position: relative;
+    text-align: center;
+    bottom: -1.8rem;
+}
+
+.teacher-content-area>div>span {
+    display: block;
+    font-size: 1.5rem;
+    color: #8a8a8a;
+    padding: .5rem 0 .5rem 0;
+}
+
+.techer-social {
+    padding-top: 1rem;
+}
+
+.techer-social a {
+    color: #07294d;
+    padding: 0 .5rem;
+    font-size: 1.6rem;
+    transition: .3s;
+}
+
+.techer-social a:hover {
+    color: var(--main-color-second);
+}
+
+.teacher-content-right-content:hover>.teacher-content-right-img-info {
+    height: 11rem;
+    transition: .5s;
+}
+
+
+/* feedback */
+.feedback-img {
+    background-image: url('/EDUBIN/assets/img/slider123.jpeg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.feedback-bg {
+    background-color: #07294d;
+    opacity: .9;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.feedback-txt {
+    position: relative;
+    max-width: 114rem;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 12rem 0 13rem 0;
+}
+
+.feedback-text-element-title {
+    padding-bottom: 4rem;
+}
+
+.feedback-text-element-title>p {
+    font-family: "Montserrat", Sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    display: block;
+    margin: 0.5rem 0;
+    line-height: 3rem;
+    color: #fff;
+}
+
+.feedback-text-element-title>span {
+    display: inline-block;
+    height: 0.3rem;
+    margin-top: 0.8rem;
+    margin-bottom: 1.3rem;
+    position: relative;
+    width: 4.2rem;
+    background: #fff;
+}
+
+.feedback-text-element-title>h2 {
+    font-family: "Montserrat", Sans-serif;
+    display: block;
+    font-size: 4.8rem;
+    font-weight: 700;
+    line-height: 5.8rem;
+    margin: 0;
+    padding-bottom: 1rem;
+    color: #fff;
+}
+
+.feedback-slide {
+    display: flex;
+}
+
+.feedback-slide-thum {
+    position: relative;
+    width: 100%;
+    padding: 4.5rem 0 0;
+    display: flex;
+}
+
+.feedback-slide-thum-img {
+    position: relative;
+    display: inline-block;
+}
+
+.feedback-slide-thum-img>img {
+    height: 9.4rem;
+    width: 9.4rem;
+}
+
+.feedback-slide-text {
+    padding: 2rem 3rem 0 5rem;
+    color: #fff;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    font-weight: 300;
+
+}
+
+.feedback-slide-text>p {
+    margin: 0;
+    margin-bottom: 2.4rem;
+    padding-bottom: .5rem;
+    padding-right: 3rem;
+}
+
+.feedback-slide-text>.feedback-name {
+    font-family: "Montserrat", Sans-serif;
+    padding: 0 3rem .4rem 0;
+    font-size: 1.8rem;
+    font-weight: 700 !important;
+    margin: 0;
+}
+
+.degree {
+    padding-bottom: .5rem;
+    padding-right: 3rem;
+    font-weight: 400;
+}
+
+.quote {
+    position: absolute;
+    top: -15%;
+    right: -15%;
+}
+
+.quote i {
+    width: 4.5rem;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    text-align: center;
+    font-size: 3.2rem;
+    background-color: var(--main-color-second);
+    border-radius: 50%;
+    color: #07294d;
+    font-size: 1.8rem;
+    transform: rotate(180deg);
+}
+
+
+/* book */
+.book-content-slides-content {
+    display: flex;
+    width: 100%;
+}
+
+.book-content-slide {
+    width: 25%;
+}
+
+.book-content-slide-img {
+    text-align: center;
+}
+
+.book-content-slide-img>img {
+    width: 100%;
+    height: 28rem;
+    object-fit: contain;
+    padding: 3.5rem 0;
+    background: #edf0f2;
+    position: relative;
+}
+
+.book-content-slide-container {
+    position: relative;
+    margin: 0 7.99999%;
+}
+
+.book-content-slide-bg {
+    background-color: rgba(0, 33, 71, .8);
+    content: "";
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0;
+    position: absolute;
+    transition: all .5s ease 0s;
+    height: 28rem;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.book-content-slide-container>a {
+    color: #07294d;
+    text-align: center;
+}
+
+.book-content-slide-container>a>h2 {
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 2rem;
+    font-size: 2.2rem;
+    margin: 0;
+    margin-bottom: 1.5rem;
+    transition: .3s;
+    font-weight: 700;
+}
+
+.book-content-slide-container>p {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #212529;
+}
+
+.book-content-slide-event {
+    position: absolute;
+    z-index: 2;
+    top: 35%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    opacity: 0;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.book-content-slide-container:hover .book-content-slide-bg {
+    opacity: 1;
+}
+
+.book-content-slide-container:hover .book-content-slide-event {
+    opacity: 1;
+    animation: book .5s ease;
+}
+
+.book-content-slide-event a {
+    text-align: center;
+}
+
+.book-content-slide-container:hover a {
+    color: var(--main-color-second);
+}
+
+.book-content-slide-event i {
+    color: var(--main-color-second);
+    font-size: 1.4rem;
+    padding: 1.3rem;
+    border: .1rem var(--main-color-second) solid;
+    border-radius: 50%;
+    margin: 0 1rem;
+    transition: .5s;
+}
+
+.book-content-slide-event i:hover {
+    color: var(--main-color-first);
+    background-color: var(--main-color-second);
+}
+
+.book-content-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.book-content-btn>a {
+    font-family: "Montserrat", Sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.7rem;
+    fill: #07294d;
+    color: #07294d;
+    background-color: #ffc600;
+    padding: 1.7rem 3rem;
+    border-radius: .3rem;
+    transition: .5s;
+}
+
+.book-content-btn>a:hover {
+    color: #fff;
+    background-color: #07294d;
+}
+
+
+/* news */
+.news-content-slides-container {
+    display: flex;
+}
+
+.news-content-slides-content {
+    width: calc(100%/3);
+    margin: 0 1.5rem;
+}
+
+.news-content-all {
+    max-width: 114rem;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 9rem 0 7rem 0;
+}
+
+.news-content-slides-container {
+    margin: 0 !important;
+}
+
+.news-slide-img>img {
+    object-fit: cover;
+}
+
+.news-slide-img {
+    height: 21rem !important;
+}
+
+.news-slide-img>img {
+    height: 21rem !important;
+}
+
+.news-post {
+    margin-top: 2rem;
+}
+
+.news-post-author {
+    padding-bottom: 1.5rem;
+}
+
+.news-post-author a {
+    color: #8a8a8a;
+    font-size: 1.4rem;
+    padding-right: 1rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-right: 3rem;
+}
+
+.news-post-author i {
+    color: var(--main-color-second);
+    font-size: 1.4rem;
+    padding-right: 1rem;
+}
+
+.news-post-title h3 {
+    font-size: 2.4rem;
+    line-height: 3.4rem;
+    color: rgb(7, 41, 77);
+    padding-top: 0;
+    padding-bottom: 2rem;
+    margin: 0;
+}
+
+.news-post-content p {
+    color: #505050;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    font-weight: 300;
+}
+
+
+/* partner */
+.partner-slide img {
+    width: 14.8rem;
+    height: 14.8rem;
+}
+
+.partner-content-slides {
+    max-width: 114rem;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 5.5rem 0 6rem 0;
+}
+
+.partner-slides-container {
+    display: flex;
+}
+
+.partner-slide {
+    width: calc(100%/5);
+}
+
+.partner-slide {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,61 @@
+.bg-fake-fade {
+    background-color: #fff;
+    width: 100%;
+    height: 82rem;
+    animation: fade-fake 1.5s ease;
+    opacity: 0;
+}
+
+@keyframes book {
+    from {
+        opacity: 0;
+        top: 50%;
+    }
+
+    to {
+        opacity: 1;
+        top: 35% !important;
+    }
+}
+
+@keyframes nav-animation {
+    from {
+        transform: translateY(-8.5rem);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes sub-menu {
+    from {
+        opacity: 0;
+        transform: translateY(.8rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fade-fake {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes showVideo {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

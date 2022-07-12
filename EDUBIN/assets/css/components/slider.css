@@ -1,0 +1,188 @@
+.slider {
+    margin-top: 12rem;
+}
+
+.slider-contianer {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+}
+
+.slider-show {
+    flex: 0 0 100%;
+}
+
+.slider-pre {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    z-index: 1;
+    width: 100%;
+    transition: all .3s linear;
+}
+
+.slider-pre div {
+    position: absolute;
+    color: #fff;
+    font-size: 1.8rem;
+    padding: 1.2rem;
+    border-radius: 10rem;
+    transition: .3s;
+    opacity: 0;
+    cursor: pointer;
+    border: .2rem solid #fff;
+}
+
+.slider-contianer:hover .slider-icon-pre {
+    opacity: 1;
+    transition: all .3s ease;
+    left: 2.8rem;
+}
+
+.slider-contianer:hover .slider-icon-next {
+    opacity: 1;
+    transition: all .3s ease;
+    right: 2.8rem;
+}
+
+.slider-icon-next:hover,
+.slider-icon-pre:hover {
+    color: var(--main-color-first);
+    border: .1rem var(--main-color-second) solid;
+    background-color: var(--main-color-second);
+}
+
+.slider-contianer>.slider-img1 {
+    position: relative;
+    background-image: url('/EDUBIN/assets/img/sld6-1536x946.jpeg');
+    padding: 13rem 0 24rem;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 82rem;
+}
+
+.slider-contianer>.slider-img2 {
+    position: relative;
+    background-image: url('/EDUBIN/assets/img/12508NN-1536x850.jpeg');
+    padding: 13rem 0 24rem;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 82rem;
+}
+
+.slider-contianer>.slider-img1>.slider-bg {
+    position: absolute;
+    content: '';
+    background: #07294D45;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+.slider-contianer>.slider-img2>.slider-bg {
+    position: absolute;
+    content: '';
+    background: #07294D45;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+.slider-content {
+    max-width: 117rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 1.5rem;
+}
+
+.slider-content>.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.slider-content-text>h1 {
+    color: #fff;
+    font-size: 6rem;
+    line-height: 7.2rem;
+    margin-bottom: 2.5rem;
+}
+
+.slider-content-text {
+    position: relative;
+}
+
+.slider-content-text-letter>p {
+    color: #fff;
+    font-size: 1.8rem;
+    padding-right: 57rem;
+    line-height: 2.6rem;
+    margin-bottom: 3rem;
+    margin-top: 0;
+}
+
+.slider-content-button {
+    position: relative;
+    display: block;
+}
+
+.content-all {
+    padding-top: 29rem;
+}
+
+.content-img {
+    background-image: url('/EDUBIN/assets/img/events-bg-img.jpeg');
+    background-position: center right;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 73.1rem;
+}
+
+.content-elements {
+    display: flex;
+    justify-content: space-between;
+    max-width: 114rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content-left,
+.content-right {
+    width: 50%;
+}
+
+.slider-content-button div {
+    display: inline-block;
+}
+
+.slider-content-button a {
+    display: block;
+    background: var(--main-color-second);
+    border: .2rem solid var(--main-color-second);
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: .3rem;
+    color: #07294d;
+    font-size: 1.5rem;
+    font-family: "Montserrat", Sans-serif;
+    font-weight: 500;
+    transition: .3s;
+    line-height: 2.6rem;
+}
+
+.slider-content-button a:hover {
+    background: var(--main-color-first);
+    border: .2rem solid var(--main-color-first);
+    color: #fff;
+}
+
+.active-slider {
+    display: block !important;
+}
+
+.active-remove {
+    display: none !important;
+}

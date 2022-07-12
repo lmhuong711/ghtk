@@ -1,0 +1,113 @@
+.header {
+    width: 100%;
+    z-index: 99;
+    position: fixed;
+    top: 0;
+    background-color: white;
+}
+
+.header-under {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 99;
+    animation: nav-animation 1s ease;
+}
+
+.header-top {
+    background-color: #07294d;
+    max-height: 4rem;
+    align-items: center;
+}
+
+.header-top-container,
+.header-container {
+    display: flex;
+    max-width: 112rem;
+    padding: 1rem 0;
+    justify-content: space-between;
+    margin: auto;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.header-top-right,
+.header-top-left,
+.header-top ul,
+.header-nav ul,
+.header-right ul {
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.header-top li,
+.header-top-login a:hover {
+    color: var(--main-color-third);
+    transition: 0.3s;
+}
+
+.header-top-right li:hover,
+.header-top-social a:hover,
+.header-top-login a {
+    color: var(--main-color-second);
+    transition: 0.3s;
+}
+
+.header-top-right>ul>li,
+.header-top-social {
+    margin-right: 2rem;
+}
+
+.header-top-social>ul>li,
+.top-space {
+    padding: 0 .7rem;
+}
+
+.header-container {
+    padding: 0 1rem;
+    align-items: center;
+}
+
+.header-logo {
+    padding: 1rem;
+}
+
+.header-logo>a>img {
+    max-width: 18rem;
+    height: auto;
+}
+
+.header-nav-content {
+    display: flex;
+}
+
+.header-nav li {
+    position: relative;
+    display: inline-block;
+}
+
+.header-nav a,
+.header-right a {
+    color: var(--main-color-first);
+    padding: 3rem 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.header-nav a:hover {
+    color: var(--main-color-second);
+}
+
+.header-nav li:hover .sub-menu {
+    display: block;
+}
+
+.header-nav i {
+    font-size: .8rem;
+    font-weight: 600;
+    margin-left: .2rem;
+    vertical-align: middle;
+}
