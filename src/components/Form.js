@@ -17,7 +17,7 @@ const CForm = React.forwardRef((props, ref) => {
         <Form
             style={{
                 justifyContent: 'center',
-                alignItems: 'center'
+                alignItems: 'center',
             }}
             form={form} ref={ref}
             layout='inline' name="cform"
@@ -55,12 +55,12 @@ const CForm = React.forwardRef((props, ref) => {
             </Form.Item>
             <Form.Item>
                 <Button type="primary" htmlType="submit">
-                    Submit
+                    Thêm
                 </Button>
             </Form.Item>
             <Form.Item>
                 <Button htmlType="button" onClick={() => ref.current.resetFields()}>
-                    Reset
+                    Làm mới
                 </Button>
             </Form.Item>
         </Form >

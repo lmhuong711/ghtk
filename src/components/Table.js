@@ -1,14 +1,13 @@
-import { Button, Form, Input, Popconfirm, Space, Table, Typography } from 'antd';
+import { Button, Form, Input, Popconfirm, Space, Table } from 'antd';
 import React, { useState, useEffect } from 'react';
-const originData = [];
 
 var key = 0;
-
-for (let i = 0; i < 3; i++) {
+const originData = [];
+for (let i = 0; i < 20; i++) {
     originData.push({
-        key: key.toString(),
+        key: key,
         msv: 'MSV' + key,
-        name: `LMH ${key}`,
+        name: `LMH ${key % 10}`,
         class: `Class no. ${key++ % 10}`,
     });
 }
@@ -125,24 +124,24 @@ const CTable = (props) => {
             editable: true,
         },
         {
-            title: 'operation',
+            title: '',
             dataIndex: 'operation',
             render: (_, record) => {
                 const editable = isEditing(record);
                 return editable ? (
                     <Space size="middle" >
-                        <Button onClick={() => save(record.key)} >Save</Button>
+                        <Button onClick={() => save(record.key)} >Lưu</Button>
                         <Popconfirm title="Sure to cancel?" onConfirm={cancel}>
-                            <Button>Cancel</Button>
+                            <Button>Hủy</Button>
                         </Popconfirm>
                     </Space>
                 ) : (
                     <Space size="middle" >
                         <Button type="primary" disabled={editingKey !== ''} onClick={() => edit(record)}>
-                            Edit
+                            Sửa
                         </Button>
                         <Popconfirm title="Sure to delete?" onConfirm={() => handleDelete(record.key)}>
-                            <Button danger>Delete</Button>
+                            <Button danger>Xóa</Button>
                         </Popconfirm>
                     </Space>
                 );
@@ -154,7 +153,6 @@ const CTable = (props) => {
         if (!col.editable) {
             return col;
         }
-
         return {
             ...col,
             onCell: (record) => ({
@@ -167,22 +165,35 @@ const CTable = (props) => {
     });
 
     return (
-        <Form form={form} component={false}>
-            <Table
-                components={{
-                    body: {
-                        cell: EditableCell,
-                    },
+        <Space
+            direction="vertical"
+            size="middle"
+            style={{
+                display: 'flex',
+                padding: '1rem'
+            }}
+        >
+            <Form form={form} component={false}
+                style={{
+                    padding: '1rem',
                 }}
-                bordered
-                dataSource={props.search === "" ? data : data.filter((item) => item.name === props.search)}
-                columns={mergedColumns}
-                rowClassName="editable-row"
-                pagination={{
-                    onChange: cancel,
-                }}
-            />
-        </Form>
+            >
+                <Table
+                    components={{
+                        body: {
+                            cell: EditableCell,
+                        },
+                    }}
+                    bordered
+                    dataSource={props.search === "" ? data : data.filter((item) => item.name.toLowerCase().includes(props.search.toLowerCase()))}
+                    columns={mergedColumns}
+                    rowClassName="editable-row"
+                    pagination={{
+                        onChange: cancel,
+                    }}
+                />
+            </Form>
+        </Space>
     );
 };
 
