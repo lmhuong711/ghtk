@@ -1,6 +1,6 @@
-import { PageHeader, Avatar } from 'antd';
+import { PageHeader } from 'antd';
 
-function Header(props) {
+function Header() {
     return (
         <PageHeader
             title="Nyan nyan"

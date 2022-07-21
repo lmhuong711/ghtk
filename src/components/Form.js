@@ -1,12 +1,23 @@
-import React, { createRef } from "react";
-import { Button, Form, Input, Col, Row } from 'antd';
+import { forwardRef, useContext } from "react";
+import { Button, Form, Input } from 'antd';
+import DataContext from "../contexts/DataContext";
 
-const CForm = React.forwardRef((props, ref) => {
+const CForm = forwardRef((props, ref) => {
     const [form] = Form.useForm();
+    const dataContext = useContext(DataContext);
 
     const onFinish = (values) => {
-        // console.log('Success:', values);
-        props.setNewData(values);
+        console.log(values);
+        props.setData({
+            ...dataContext,
+            data: [{
+                key: dataContext.key,
+                ...values
+            },
+            ...dataContext.data],
+            key: dataContext.key + 1,
+        });
+
     };
 
     const onFinishFailed = (errorInfo) => {
@@ -29,10 +40,18 @@ const CForm = React.forwardRef((props, ref) => {
         >
             <Form.Item
                 label="MSV" name="msv"
-                rules={[{
-                    required: true,
-                    message: 'Cần nhập MSV!',
-                }]}
+                rules={[
+                    {
+                        required: true,
+                        message: 'Cần nhập MSV!',
+                    },
+                    {
+                        validator: (_, value) =>
+                            dataContext.data.map(e => e.msv).includes(value.trim()) ?
+                                Promise.reject(new Error('MSV đã tồn tại')) :
+                                Promise.resolve(),
+                    },
+                ]}
             >
                 <Input allowClear />
             </Form.Item>

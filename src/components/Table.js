@@ -1,16 +1,6 @@
 import { Button, Form, Input, Popconfirm, Space, Table } from 'antd';
-import React, { useState, useEffect } from 'react';
-
-var key = 0;
-const originData = [];
-for (let i = 0; i < 20; i++) {
-    originData.push({
-        key: key,
-        msv: 'MSV' + key,
-        name: `LMH ${key % 10}`,
-        class: `Class no. ${key++ % 10}`,
-    });
-}
+import { useState, useContext } from 'react';
+import DataContext from '../contexts/DataContext';
 
 const EditableCell = ({
     editing,
@@ -21,6 +11,7 @@ const EditableCell = ({
     children,
     ...restProps
 }) => {
+    const dataContext = useContext(DataContext);
     const inputNode = <Input />;
     return (
         <td {...restProps}>
@@ -35,6 +26,14 @@ const EditableCell = ({
                             required: true,
                             message: `Cần nhập ${title}!`,
                         },
+                        {
+                            validator: (_, value) => {
+                                if (dataIndex !== 'msv') return Promise.resolve();
+                                if (dataContext.data.map(e => e.msv).includes(value.trim()))
+                                    return Promise.reject(new Error('MSV đã tồn tại'));
+                                else return Promise.resolve();
+                            }
+                        },
                     ]}
                 >
                     {inputNode}
@@ -47,26 +46,18 @@ const EditableCell = ({
 };
 
 const CTable = (props) => {
+    const dataContext = useContext(DataContext);
     const [form] = Form.useForm();
-    const [data, setData] = useState(originData);
     const [editingKey, setEditingKey] = useState('');
-
-    useEffect(() => {
-        if (props.newData != null) {
-            const newData = {
-                ...props.newData,
-                key: key++,
-            }
-            setData([newData, ...data]);
-            props.setNewData(null);
-        }
-    }, [props.newData]);
 
     const isEditing = (record) => record.key === editingKey;
 
     const handleDelete = (key) => {
-        const newData = data.filter((item) => item.key !== key);
-        setData(newData);
+        const newData = dataContext.data.filter((item) => item.key !== key);
+        props.setData({
+            ...dataContext,
+            data: newData,
+        });
     };
 
     const edit = (record) => {
@@ -86,17 +77,23 @@ const CTable = (props) => {
     const save = async (key) => {
         try {
             const row = await form.validateFields();
-            const newData = [...data];
+            const newData = [...dataContext.data];
             const index = newData.findIndex((item) => key === item.key);
 
             if (index > -1) {
                 const item = newData[index];
                 newData.splice(index, 1, { ...item, ...row });
-                setData(newData);
+                props.setData({
+                    ...dataContext,
+                    data: newData,
+                });
                 setEditingKey('');
             } else {
                 newData.push(row);
-                setData(newData);
+                props.setData({
+                    ...dataContext,
+                    data: newData,
+                });
                 setEditingKey('');
             }
         } catch (errInfo) {
@@ -185,7 +182,7 @@ const CTable = (props) => {
                         },
                     }}
                     bordered
-                    dataSource={props.search === "" ? data : data.filter((item) => item.name.toLowerCase().includes(props.search.toLowerCase()))}
+                    dataSource={dataContext.search === "" ? dataContext.data : dataContext.data.filter((item) => item.name.toLowerCase().includes(dataContext.search.toLowerCase()))}
                     columns={mergedColumns}
                     rowClassName="editable-row"
                     pagination={{
