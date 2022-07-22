@@ -8,7 +8,7 @@ const CForm = forwardRef((props, ref) => {
 
     const onFinish = (values) => {
         console.log(values);
-        props.setData({
+        dataContext.setData({
             ...dataContext,
             data: [{
                 key: dataContext.key,

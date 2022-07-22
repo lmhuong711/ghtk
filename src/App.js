@@ -16,7 +16,7 @@ function App() {
 
   return (
     <div className="App">
-      <DataContext.Provider value={data}>
+      <DataContext.Provider value={{...data, setData: setData}}>
         <Space
           direction="vertical"
           size="middle"

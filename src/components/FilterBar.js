@@ -6,7 +6,7 @@ const { Search } = Input;
 
 const FilterBar = (props) => {
     const dataContext = useContext(DataContext);
-    const onSearch = (value) => props.setData({
+    const onSearch = (value) => dataContext.setData({
         ...dataContext,
         search: value.trim()
     });

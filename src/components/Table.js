@@ -54,7 +54,7 @@ const CTable = (props) => {
 
     const handleDelete = (key) => {
         const newData = dataContext.data.filter((item) => item.key !== key);
-        props.setData({
+        dataContext.setData({
             ...dataContext,
             data: newData,
         });
@@ -83,14 +83,14 @@ const CTable = (props) => {
             if (index > -1) {
                 const item = newData[index];
                 newData.splice(index, 1, { ...item, ...row });
-                props.setData({
+                dataContext.setData({
                     ...dataContext,
                     data: newData,
                 });
                 setEditingKey('');
             } else {
                 newData.push(row);
-                props.setData({
+                dataContext.setData({
                     ...dataContext,
                     data: newData,
                 });

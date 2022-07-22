@@ -12,7 +12,7 @@ Trang có các thành phần tìm kiếm, thêm xóa sửa sinh viên:
 ##  Run
 
 ```
-git clone git.link
+git clone https://github.com/lmhuong711/ghtk.git
 yarn
 yarn start
 ```
